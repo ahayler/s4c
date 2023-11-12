@@ -27,7 +27,7 @@ Our proposed method can reconstruct a scene from a single image and only relies 
 Unlike existing methods, which use discrete voxel grids, we represent scenes as implicit semantic fields. This formulation allows querying any point within the camera frustum for occupancy and semantic class. Our architecture is trained through rendering-based self-supervised losses.
 Nonetheless, our method achieves performance close to fully supervised state-of-the-art methods. Additionally, our method demonstrates strong generalization capabilities and can synthesize accurate segmentation maps for far away viewpoints.
 
-# 🪧 Overview
+# 👀 Overview
 
 ![Overview Figure](assets/overview.png)
 
