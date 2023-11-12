@@ -1,0 +1,15 @@
+type: "KITTI_360"
+data_path: "/usr/stud/hayler/storage/group/dataset_mirrors/01_incoming/kitti_360/KITTI-360"
+data_segmentation_path: "/storage/slurm/wimbauer/kitti_360/panoptic_deeplab_R101_os32_cityscapes_hr"
+pose_path: "/usr/stud/hayler/storage/group/dataset_mirrors/01_incoming/kitti_360/KITTI-360/data_poses"
+split_path: "datasets/kitti_360/splits/sscbench"
+image_size: [ 192, 640 ]
+data_stereo: true
+data_fc: 2
+fisheye_rotation: -15
+fisheye_offset: [10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40]
+is_preprocessed: false
+constrain_to_datapoints: True
+
+data_segmentation: true
+

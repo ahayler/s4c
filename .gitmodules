@@ -1,0 +1,6 @@
+[submodule "scripts/devtools/kitti360"]
+	path = scripts/devtools/kitti360
+	url = git@github.com:autonomousvision/kitti360Scripts.git
+[submodule "datasets/panoptic-deeplab"]
+	path = datasets/panoptic-deeplab
+	url = git@github.com:bowenc0221/panoptic-deeplab.git
