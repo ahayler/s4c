@@ -31,11 +31,11 @@ Nonetheless, our method achieves performance close to fully supervised state-of-
 
 ![Overview Figure](assets/overview.png)
 
-**a)** From an input image $\textbf{I}_\textbf{I}$, an encoder-decoder network predicts a pixel-aligned feature map $\textbf{F}$ describing a semantic field in the frustum of the image. 
-The feature $f_{\textbf{u}_i}$ of pixel $\textbf{u}_i$ encodes the semantic and occupancy distribution on the ray cast from the optical center through the pixel. 
+**a)** From an input image $\textbf{I}\_\textbf{I}$, an encoder-decoder network predicts a pixel-aligned feature map $\textbf{F}$ describing a semantic field in the frustum of the image. 
+The feature $f\_{\textbf{u}\_i}$ of pixel $\textbf{u}\_i$ encodes the semantic and occupancy distribution on the ray cast from the optical center through the pixel. 
 **b)** The semantic field allows rendering novel views and their corresponding semantic segmentation via volumetric rendering. 
-A 3D point $\textbf{x}_i$ is projected into the input image and therefore $\textbf{F}$ to sample $f_{\textbf{u}_i}$. Combined with positional encoding of $\textbf{x}_i$, two MLPs decode the density of the point $\sigma_i$ and semantic label $l_i$, respectively. 
-The color $c_i$ for novel view synthesis is obtained from other images via color sampling. 
+A 3D point $\textbf{x}\_i$ is projected into the input image and therefore $\textbf{F}$ to sample $f\_{\textbf{u}\_i}$. Combined with positional encoding of $\textbf{x}_i$, two MLPs decode the density of the point $\sigma\_i$ and semantic label $l\_i$, respectively. 
+The color $c\_i$ for novel view synthesis is obtained from other images via color sampling. 
 **c)** To achieve best results, we require training views to cover as much surface of the scene as possible. Therefore, we sample side views from random future timesteps, that observe areas of the scene that are occluded in the input frame.
 
 # 🏗️️ Setup
