@@ -4,8 +4,8 @@ seed: 0
 output_path: "out/default"
 
 batch_size: 16
-# num_workers: 4
-num_workers: 1
+num_workers: 4
+# num_workers: 1
 
 eval_use_iters: true
 vis_use_iters: true
