@@ -89,7 +89,7 @@ You can download the pseudo-ground-truth segmentation masks from [here](https://
 
 Alternatively, you can generate them yourself. For this we use the [Panoptic Deeplab model zoo (CVPR 2020)](https://github.com/bowenc0221/panoptic-deeplab/tree/master).
 First create and activate a new conda environment following the instructions laid out [here](https://github.com/bowenc0221/panoptic-deeplab/blob/master/tools/docs/INSTALL.md). \
-You can find the `requirements.txt` file under `\datasets\panoptic-deeplab_new\requirements.txt`.
+You can find the `requirements.txt` file under `\datasets\panoptic-deeplab\requirements.txt`.
 You also need to download the [R101-os32 cityscapes baseline model](https://github.com/bowenc0221/panoptic-deeplab/blob/master/tools/docs/MODEL_ZOO.md).
 
 Afterwards, you can run:
