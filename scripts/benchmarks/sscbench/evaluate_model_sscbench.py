@@ -6,7 +6,7 @@ from omegaconf import open_dict
 import matplotlib.pyplot as plt
 
 sys.path.append(".")
-sys.path.extend("../../../")
+sys.path.extend([".", "../../../"])
 
 from scripts.benchmarks.sscbench.generate_ply_sequence import get_cam_k
 from scripts.benchmarks.sscbench.point_utils import read_calib, generate_point_grid, get_fov_mask
@@ -54,7 +54,7 @@ USE_ADDITIONAL_INVALIDS = True
 TEST_ALPHA_CUTOFFS = False
 SEARCH_VALUES = [10e-1, 10e-2, 10e-3, 10e-4, 10e-5, 10e-6, 10e-7]
 
-SIGMA_CUTOFF = 0.1
+SIGMA_CUTOFF = 0.25
 
 USE_ALPHA_WEIGHTING = True
 USE_GROW = True
@@ -121,6 +121,7 @@ def main():
     if FULL_EVAL:
         full_evaluation = True
 
+    logging.info(f"Using a sigma cutoff of {SIGMA_CUTOFF}")
     logging.info("Setting up dataset")
 
     with open("label_maps.yaml", "r") as f:
