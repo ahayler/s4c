@@ -9,7 +9,7 @@ This is the official implementation for the 3DV 2024 paper:
 > [Adrian Hayler](https://ahayler.github.io)<sup> *,1</sup>, [Felix Wimbauer](https://fwmb.github.io)<sup> *,1</sup> , [Dominik Muhle](https://dominikmuhle.github.io/)<sup>1</sup>, [Christian Rupprecht](https://chrirupp.github.io/)<sup>2</sup> and [Daniel Cremers](https://vision.in.tum.de/members/cremers)<sup>1</sup><br>
 > <sup>1</sup>Technical University of Munich, <sup>2</sup>Munich Center for Machine Learning, <sup>3</sup>University of Oxford 
 > 
-> [**3DV 2024** (arXiv)](https://arxiv.org/abs/2310.07522)
+> [**3DV Spotlight 2024** (arXiv)](https://arxiv.org/abs/2310.07522)
 
 If you find our work useful, please consider citing our paper:
 ```
