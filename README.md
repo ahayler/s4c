@@ -9,7 +9,7 @@ This is the official implementation for the 3DV 2024 paper:
 > [Adrian Hayler](https://ahayler.github.io)<sup> *,1</sup>, [Felix Wimbauer](https://fwmb.github.io)<sup> *,1</sup> , [Dominik Muhle](https://dominikmuhle.github.io/)<sup>1</sup>, [Christian Rupprecht](https://chrirupp.github.io/)<sup>2</sup> and [Daniel Cremers](https://vision.in.tum.de/members/cremers)<sup>1</sup><br>
 > <sup>1</sup>Technical University of Munich, <sup>2</sup>Munich Center for Machine Learning, <sup>3</sup>University of Oxford 
 > 
-> [**3DV 2024** (arXiv)](https://arxiv.org/abs/2310.07522)
+> [**3DV Spotlight 2024** (arXiv)](https://arxiv.org/abs/2310.07522)
 
 If you find our work useful, please consider citing our paper:
 ```
@@ -89,7 +89,7 @@ You can download the pseudo-ground-truth segmentation masks from [here](https://
 
 Alternatively, you can generate them yourself. For this we use the [Panoptic Deeplab model zoo (CVPR 2020)](https://github.com/bowenc0221/panoptic-deeplab/tree/master).
 First create and activate a new conda environment following the instructions laid out [here](https://github.com/bowenc0221/panoptic-deeplab/blob/master/tools/docs/INSTALL.md). \
-You can find the `requirements.txt` file under `\datasets\panoptic-deeplab_new\requirements.txt`.
+You can find the `requirements.txt` file under `\datasets\panoptic-deeplab\requirements.txt`.
 You also need to download the [R101-os32 cityscapes baseline model](https://github.com/bowenc0221/panoptic-deeplab/blob/master/tools/docs/MODEL_ZOO.md).
 
 Afterwards, you can run:
