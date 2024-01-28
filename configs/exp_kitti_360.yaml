@@ -11,7 +11,7 @@ num_epochs: 60
 # batch_size: 16
 batch_size: 1
 
-use_pretrained: true
+use_backbone: true
 
 # set the segmentation_mode on this level; it is automatically copied down
 # segmentation_mode: "KITTI-360"

@@ -3,12 +3,6 @@ import hydra
 from omegaconf import DictConfig, OmegaConf
 import os
 
-import torch
-
-from models.bts.trainer import training as bts
-from models.bts.trainer_overfit import training as bts_overfit
-
-
 @hydra.main(version_base=None, config_path="configs")
 def main(config: DictConfig):
 

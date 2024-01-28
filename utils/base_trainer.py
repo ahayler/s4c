@@ -344,10 +344,10 @@ def create_trainer(model, optimizer, criterion, lr_scheduler, train_sampler, con
         checkpoint = torch.load(checkpoint_fp.as_posix(), map_location="cpu")
         Checkpoint.load_objects(to_load=to_save, checkpoint=checkpoint)
 
-    # train from a pretrained
-    if config["name"] == "kitti_360" and config.get("use_pretrained", False):
+    # train from backbone
+    if config["name"] == "kitti_360" and config.get("use_backbone", False):
         assert not resume_from, \
-            f"You are trying to load a model from '{checkpoint_fp.as_posix()}', whilst also using the pretrained model." \
+            f"You are trying to load a model from '{checkpoint_fp.as_posix()}', whilst also using the backbone." \
             f" Only one of the two is possible at the same time!"
         cp_path = Path(f"out/kitti_360/pretrained")
         cp_path = next(cp_path.glob("training*.pt"))

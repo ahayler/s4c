@@ -104,7 +104,13 @@ python <path-to-script>/preprocess_kitti_360_segmentation.py \
 # 🏋 Training
 
 The training configuration for the model reported on in the paper can be found in the `configs` folder.
-Generally, all trainings are run on a single Nvidia A40 GPU with 48GB memory.
+Generally, all trainings are run on a single Nvidia A40 GPU with 48GB memory. 
+For faster convergence and slightly better results, we use the pretrained model from [BehindTheScenes](https://fwmb.github.io/bts/)
+as a backbone from which we start our training. To download the backbone please run:
+
+```bash
+./download_backbone.sh
+```
 
 **KITTI-360**
 
@@ -114,7 +120,7 @@ python train.py -cn exp_kitti_360
 
 ### 📸 Checkpoints
 
-Checkpoints will be added with the release of the camera-ready paper (after the CVPR deadlines).
+You can download our pretrained model from [here](https://cvg.cit.tum.de/webshare/g/s4c/model_checkpoint.zip).
 
 # 🏃 Running the Example
 
