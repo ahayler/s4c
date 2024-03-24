@@ -227,3 +227,12 @@ C. R. is supported by VisualAI EP/T028572/1 and ERC-UNION-CoG-101001212.
 This repository is based on the [BehindTheScenes](https://fwmb.github.io/bts/). 
 We evaluate our models on the novel [SSCBench KITTI-360 benchmark](https://github.com/ai4ce/SSCBench). 
 We generate our pseudo 2D segmentation ground truth using the [Panoptic Deeplab model zoo](https://github.com/bowenc0221/panoptic-deeplab/tree/master).
+
+# ❔ FAQ
+
+Here you can find the answers to commonly asked questions.
+
+### Label standard
+**Q:** What semantic labels are you using?
+ 
+**A:** To generate the Pseudo-Ground-Truth Segmentation masks we use models from the [Panoptic Deeplab model zoo](https://github.com/bowenc0221/panoptic-deeplab/tree/master) that predict the [cityscapes labels](https://github.com/mcordts/cityscapesScripts/blob/master/cityscapesscripts/helpers/labels.py). To evaluate our method on the [SSCBench KITTI-360 benchmark](https://github.com/ai4ce/SSCBench), we have mapped the sematic classes from cityscapes and KITTI-360 (SSCBench) to a unified label standard. Most classes have an one-to-one correspondence. The detailed mapping can be found (and edited) in [label_maps.yaml](https://github.com/ahayler/s4c/blob/a38d441f18c42a2ef416447f89e02ade91510989/scripts/benchmarks/sscbench/label_maps.yaml).
