@@ -1,6 +1,6 @@
 # S4C: Self-Supervised Semantic Scene Completion with Neural Fields
 
-[**Paper**](https://arxiv.org/abs/2310.07522) |  [**Video** (Soon)](#) | [**Project Page**](https://ahayler.github.io/publications/s4c/)
+[**Paper**](https://arxiv.org/abs/2310.07522) |  [**Video**](https://youtu.be/C9TTDVrIeIU) | [**Project Page**](https://ahayler.github.io/publications/s4c/)
 
 This is the official implementation for the 3DV 2024 paper:
 
